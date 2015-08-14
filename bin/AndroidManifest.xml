@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.survey.form"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.survey.form.LoginActivity"
+            android:label="Login to your Account" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Entry for RegisterActivity.class -->
+        <activity
+            android:name="com.survey.form.RegisterActivity"
+            android:label="Register New Account" >
+        </activity>
+        <activity
+            android:name="com.survey.form.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.survey.form.AlcoholActivity"
+            android:label="@string/title_activity_alcohol" >
+        </activity>
+        <activity
+            android:name="com.survey.form.SmokeActivity"
+            android:label="@string/title_activity_smoke" >
+        </activity>
+        <activity
+            android:name="com.survey.form.PainActivity"
+            android:label="@string/title_activity_pain" >
+        </activity>
+        <activity
+            android:name="com.survey.form.ResultActivity"
+            android:label="@string/title_activity_result" >
+        </activity>
+    </application>
+
+</manifest>

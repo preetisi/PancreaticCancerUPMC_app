@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+    
+    
+        <!-- Header  Starts -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/header_gradient"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <!-- Logo Start -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/logo" />
+            <!-- Logo Ends -->
+        </LinearLayout>
+
+        <!-- Header Ends -->
+        <!-- Footer Start -->
+        <!-- Footer Ends -->
+
+
+        <!-- Login Form -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <!-- Email Label -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="Was there ever a time when you drank beer, wine, wine coolers, liquor, or mixed drinks?"
+                android:textColor="#372c24" />
+
+            <!-- Submit button -->
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/alc_yes"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alc_no"
+                    android:textColor="#000" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <!-- Email Label -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you currently drink alcohol?"
+                android:textColor="#372c24" />
+
+            <!-- Submit button -->
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/alc_yes"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alc_no"
+                    android:textColor="#000" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout2"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How old were you when you first started drinking, not counting small tastes or sips of alcohol?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout3"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How many years did you drink alcohol in your life?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout4"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="What was the LARGEST number of drinks that you ever drank in a single day?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout5"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="On the AVERAGE about how many drinks would you have on a drinking day?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout6"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How many days per month did you drink at this level?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout7"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="Were there days that you would drink MORE THAN the average amount you indicated above?"
+                android:textColor="#372c24" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/alc_yes"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alc_no"
+                    android:textColor="#000" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout8"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="If YES, how many drinks would you have on these days?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+         </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout9"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How many days per month did you drink at this level?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+         </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout10"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="In the years before getting pancreatitis, did you indulge in Binge drinking(consuming 5 or more drinks (male), or 4 or more drinks (female), in about 2 hours)?"
+                android:textColor="#372c24" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/alc_yes"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:id="@+id/radio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alc_no"
+                    android:textColor="#000" />
+            </RadioGroup>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout11"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How old were you when you began drinking the most alcohol in your life?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout12"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="On the AVERAGE about how many drinks would you have on a drinking day? "
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout13"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How many days per month did you drink at this level?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>        
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout14"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="Were there days that you would drink MORE THAN the average amount you indicated above?"
+                android:textColor="#372c24" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/alc_yes"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:id="@+id/radio7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alc_no"
+                    android:textColor="#000" />
+            </RadioGroup>
+        </LinearLayout>
+   
+        <LinearLayout
+            android:id="@+id/linearLayout16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout15"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="If YES, how many drinks would you have on these days?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>        
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout16"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How many days per month did you drink at this level?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>        
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout17"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How many days per month did you drink at this level?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>        
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout18"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How long did you drink alcohol at the heaviest level?"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/editText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>        
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout19"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="During the period of maximum drinking in your life, did you indulge in Binge drinking (consuming 5 or more drinks (male), or 4 or more drinks (female), in about 2 hours)?"
+                android:textColor="#372c24" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/alc_yes"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:id="@+id/radio8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alc_no"
+                    android:textColor="#000" />
+            </RadioGroup>
+        </LinearLayout>
+     
+         <LinearLayout
+            android:id="@+id/linearLayout21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout20"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="During the period of maximum drinking in your life, did you indulge in Binge drinking (consuming 5 or more drinks (male), or 4 or more drinks (female), in about 2 hours)?"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/drink_arrays"
+                android:prompt="@string/drink_prompt" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How many drinks containing alcohol do you have on a typical day when you are drinking?"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/day_arrays"
+                android:prompt="@string/day_prompt" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How often do you have six or more drinks on one occasion?"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/six_arrays"
+                android:prompt="@string/six_prompt" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text=" How often during the past year have you found that you were not able to stop drinking once you had started?"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/six_arrays"
+                android:prompt="@string/six_prompt" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How often during the past year have you failed to do what was normally expected of you because of drinking?"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/six_arrays"
+                android:prompt="@string/six_prompt" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How often during the past year have you needed a first drink in the morning to get yourself going after a heavy drinking session?"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/spinner6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/six_arrays"
+                android:prompt="@string/six_prompt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How often during the past year have you had a feeling of guilt or remorse after drinking?"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/spinner7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/six_arrays"
+                android:prompt="@string/six_prompt" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text="How often during the past year have you been unable to remember what happened the night before because you had been drinking?"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/spinner8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/six_arrays"
+                android:prompt="@string/six_prompt" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text=" Have you or has someone else been injured as a result of your drinking?"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/spinner9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/injured_arrays"
+                android:prompt="@string/injured_prompt" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.87"
+                android:text=" Has a relative or friend or a doctor or other health worker been concerned about your drinking or suggested you cut down?"
+                android:textColor="#372c24" />
+
+            <Spinner
+                android:id="@+id/spinner10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/injured_arrays"
+                android:prompt="@string/injured_prompt" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout21"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+        
+         <Button android:id="@+id/btnContinue" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="10dip"
+		  		android:text="Continue"/>
+		  
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LoginActivity!</string>
+    <string name="app_name">AndroidLoginAndRegistration</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="alc_yes">Yes</string>
+    <string name="alc_no">No</string>
+    <string name="radio_epi">I am usually pain free, but have episodes of mild to moderate pain</string>
+    <string name="radio_mild">I have constant mild to moderate pain</string>
+    <string name="radio_free">I am usually free of abdominal pain, but I have episodes of severe pain</string>
+    <string name="radio_cons_mild">I have constant mild to moderate pain, plus episodes of severe pain</string>
+    <string name="radio_severe">I have constant severe pain that does not change</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="edu_prompt">Choose a country</string>
+
+    <string-array name="edu_arrays">
+        <item>Never attended</item>
+        <item>Elementary School</item>
+        <item>Middle School</item>
+        <item>High School</item>
+        <item>GED or equivalent</item>
+        <item>Some Collge,No degree</item>
+        <item>College Degree</item>
+        <item>Graduate Degree</item>
+        <item>Refused</item>
+        <item>Dont know</item>
+    </string-array>
+
+    <string name="emp_prompt">Choose a country</string>
+
+    <string-array name="emp_arrays">
+        <item>Working Now</item>
+        <item>Only temporarily laid off,leave</item>
+        <item>Looking for work,Unemployed</item>
+        <item>Retired</item>
+        <item>Disabled,permanently or temporarily</item>
+        <item>Some Collge,No degree</item>
+        <item>Keeping House</item>
+        <item>Student</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="drink_prompt">Select Choice</string>
+
+    <string-array name="drink_arrays">
+        <item>Never</item>
+        <item>Monthly or less</item>
+        <item>2 to 4 times a month</item>
+        <item>2 or 3 times a week</item>
+        <item>4 or more times a week</item>
+    </string-array>
+
+    <string name="day_prompt">Select Choice</string>
+
+    <string-array name="day_arrays">
+        <item>1 or 2</item>
+        <item>3 or 4</item>
+        <item>5 or 6</item>
+        <item>7 to 9</item>
+        <item>10 or more</item>
+    </string-array>
+
+    <string name="six_prompt">Select Choice</string>
+
+    <string-array name="six_arrays">
+        <item>Never</item>
+        <item>Less than monthly</item>
+        <item>Monthly</item>
+        <item>Weekly</item>
+        <item>Daily or almost daily</item>
+    </string-array>
+
+    <string name="injured_prompt">Select Choice</string>
+
+    <string-array name="injured_arrays">
+        <item>No</item>
+        <item>Yes,but not in the past year</item>
+        <item>yes,during the past year</item>
+    </string-array>
+
+    <string name="title_activity_alcohol">AlcoholActivity</string>
+    <string name="title_activity_smoke">SmokeActivity</string>
+    <string name="title_activity_pain">PainActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+
+</resources>
